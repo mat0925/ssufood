@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultColor"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@color/defaultColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="6dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#585858"/>
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="9"
+        android:background="@color/darkGreen"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ticket"/>
+            <TextView
+                android:fontFamily="@font/binggrae"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:textColor="#585858"
+                android:text="식권 구매"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <TextView
+                android:fontFamily="@font/binggrae"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="모바일로 식권을 구매하세요."
+                android:textSize="30dp"
+                android:textColor="#585858"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_marginTop="30dp"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1">
+        <TextView
+            android:fontFamily="@font/binggrae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="직접 사용하기 위해 구매"
+            android:textColor="#585858"
+            android:textSize="20dp"
+            android:layout_weight="2"/>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#585858"/>
+    <GridLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:layout_gravity="fill"
+        >
+        <TextView
+            android:fontFamily="@font/binggrae"
+            android:layout_gravity="end"
+            android:text="수량 : "
+            android:textSize="20dp"/>
+        <Spinner
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/buyuse_spinner"
+            android:spinnerMode="dropdown"
+            android:background="#fff"
+            android:textColor="#585858"
+            android:layout_columnSpan="2"></Spinner>
+
+            <TextView
+                android:fontFamily="@font/binggrae"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="차감 포인트 : "
+                android:textSize="20dp"
+                android:textColor="#585858"/>
+            <TextView
+                android:fontFamily="@font/binggrae"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/declinePoint"
+                android:textSize="20dp"
+                android:textColor="#585858"
+                />
+            <Button
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/payButton"
+                android:text="구매"
+                android:textColor="#585858"
+                android:background="#fff"/>
+    </GridLayout>
+    </GridLayout>
+
+</android.widget.LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/defaultColor">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/gobackButton"
+        android:layout_width="80dp"
+        android:scaleType="fitXY"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/defaultColor"
+        android:src="@drawable/gobackicon"/>
+        <TextView
+            android:fontFamily="@font/binggrae"
+            android:text="내 정보 확인"
+            android:textSize="50dp"/>
+    </GridLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#585858"/>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border2">
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/usericon"/>
+    <GridLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1">
+        <TextView
+            android:id="@+id/userSID"
+            android:fontFamily="@font/binggrae"
+            android:layout_marginTop="10dp"
+            android:text="userSID"
+            android:textSize="28dp"/>
+
+        <TextView
+            android:id="@+id/Tickets"
+            android:fontFamily="@font/binggrae"
+            android:layout_marginTop="5dp"
+            android:text="Tickets"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/Points"
+            android:fontFamily="@font/binggrae"
+            android:layout_marginTop="5dp"
+            android:text="Points"
+            android:textSize="25dp"/>
+    </GridLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/border2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+        <TextView
+            android:fontFamily="@font/binggrae"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:text="보유 식권"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#585858"/>
+        <ListView
+            android:fontFamily="@font/binggrae"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+</android.widget.LinearLayout>

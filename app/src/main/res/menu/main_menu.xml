@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+        android:id="@+id/menu_button"
+        android:title="menu"
+        android:icon="@drawable/menuicon"
+        app:showAsAction="always"
+    >
+</item>
+   <item
+       android:id="@+id/toolbutton1"
+       android:title="메인화면"
+       android:fontFamily="@font/binggrae"
+       app:showAsAction="always">
+
+   </item>
+   <item
+       android:id="@+id/toolbutton2"
+       android:title="식권구매"
+       android:fontFamily="@font/binggrae"
+       app:showAsAction="always">
+
+   </item>
+   <item
+       android:id="@+id/toolbutton3"
+       android:title="식권선물"
+       android:fontFamily="@font/binggrae"
+       app:showAsAction="always">
+
+   </item>
+   <item
+      android:id="@+id/toobutton4"
+      android:title="포인트충전"
+       android:fontFamily="@font/binggrae"
+      app:showAsAction="always"></item>
+   <item
+      android:id="@+id/empty"
+      android:title="              "
+      app:showAsAction="always"></item>
+</menu>

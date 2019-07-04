@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultColor"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@color/defaultColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="6dp" />
+    <View
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#585858"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="#e9e9e9">
+        <TextView
+            android:fontFamily="@font/binggrae"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인이 되어있지 않습니다."
+            android:textColor="@color/darkGreen"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+        <GridLayout
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            android:columnCount="3">
+           <TextView
+               android:fontFamily="@font/binggrae"
+               android:layout_margin="10dp"
+               android:layout_gravity="end"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ID : "
+               android:textColor="@color/darkGreen"
+               android:textStyle="bold"
+               android:textSize="30dp"/>
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/inputID"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_columnSpan="2"
+                android:maxLength="8"/>
+                <TextView
+                    android:fontFamily="@font/binggrae"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 : "
+                    android:textColor="@color/darkGreen"
+                    android:textStyle="bold"
+                    android:textSize="30dp"/>
+                <EditText
+                    android:layout_margin="10dp"
+                    android:layout_columnSpan="2"
+                    android:id="@+id/inputPW"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:inputType="textPassword"
+                    android:maxLength="8"/>
+
+        </GridLayout>
+        <GridLayout
+            android:layout_marginTop="30dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            >
+            <Button
+                android:fontFamily="@font/binggrae"
+                android:layout_gravity="center"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="로그인"
+                android:textSize="30dp"
+                android:textColor="@color/darkGreen"
+                android:gravity="center_horizontal"
+                android:id="@+id/loginButton"
+                android:background="@color/defaultColor"/>
+            <TextView
+                android:fontFamily="@font/binggrae"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아직 회원이 아니신가요?"
+                android:textColor="@color/darkGreen"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+            <Button
+                android:fontFamily="@font/binggrae"
+                android:layout_gravity="center"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textSize="30dp"
+                android:textColor="@color/darkGreen"
+                android:gravity="center_horizontal"
+                android:id="@+id/joinButton"
+                android:background="@color/defaultColor"/>
+        </GridLayout>
+    </LinearLayout>
+
+
+</android.widget.LinearLayout>
